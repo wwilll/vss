@@ -1,0 +1,450 @@
+*{margin: 0;padding: 0}
+ol,ul{list-style: none;}
+
+.section>div{
+	overflow: hidden;
+}
+/*第一屏区域*/
+.section1{
+	height: 100%;
+	background: url('../images/first_bg.jpg') center/100% 100% no-repeat;
+}
+.section1>div{
+	position: relative;
+}
+.section1>div>.word1{
+	width: 400px;
+	height: 190px;
+	position: absolute;
+	background: url('../images/p001.png') center/100% 100% no-repeat;
+	top: 100px;
+	left: 50%;
+	margin-left: -400px;
+}
+.section1>div>.word2{
+	width: 400px;
+	height: 128px;
+	position: absolute;
+	background: url('../images/p002.png') center/100% 100% no-repeat;
+	top: 290px;
+	left: 50%;
+	margin-left: -150px;
+}
+.section1>div>.word3{
+	width: 400px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 20px;
+	text-align: right;
+	position: absolute;
+	/*background-color: yellow;*/
+	bottom: 10px;
+	right: 10px;
+}
+.section1>div>.web{
+	width: 214px;
+	height: 214px;
+	position: absolute;
+	top: 100px;
+	right: 75px;
+	border-radius: 107px;
+	overflow: hidden;
+}
+.section1>div>.web>.circle{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:skyblue url('../images/circle.png')no-repeat center/100% 100%;
+}
+.section1>div>.web>p{
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 900;
+	position: absolute;
+	top: 67px;
+	left: 67px;
+}
+/*区域1 旋转动画*/
+@keyframes rotate{
+	from{}
+	to{
+		transform: rotate(360deg);
+	}
+}
+.section1>div>.web>.circle{
+	animation: rotate 2s infinite linear;
+}
+/*第二屏区域*/
+.section2{
+	background: url('../images/second_bg.jpg') center/100% 100% no-repeat;
+}
+.section2>div>.title{
+	width: 860px;
+	height: 140px;
+	margin: 0 auto;
+	background: url('../images/hengfu.png') bottom left/250px 40px no-repeat;
+}
+.section2>div>.title>h2{
+	color: white;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 900;
+	text-align: center;
+	padding: 10px;
+	border-bottom: 4px solid white;
+}
+.section2>div>.st{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+.section2>div>.st>li{}
+.section2>div>.st>li>div{
+	border-radius: 30px;
+	width: 269px;
+	height: 353px;
+	background: url('../images/1.png') center/100% 100% no-repeat;
+}
+/*换成jif达到动画效果*/
+.section2>div>.st>li>div:hover{
+	background: url('../images/2.png') center/100% 100% no-repeat;
+}
+.section2>div>.st>li>div>h3{
+	color: skyblue;
+	font-size: 26px;
+	padding-left: 20px;
+}
+.section2>div>.st>li>div>p{
+	font-size: 18px;
+	color: white;
+	padding-left: 20px;
+}
+.section2>div>.st>li>h3{
+	color: goldenrod;
+	text-align: center;
+	font-size: 24px;
+}
+.section2>div>.st>li>p{
+	font-size: 16px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+/*第三屏区域*/
+.section3{
+	background: url('../images/third_bg.jpg') no-repeat center/cover;
+}
+.section3>div>.title{
+	width: 860px;
+	height: 140px;
+	margin: 0 auto;
+	background: url('../images/hengfu.png') bottom left/250px 40px no-repeat;
+}
+.section3>div>.title>h2{
+	color: white;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 900;
+	text-align: center;
+	padding: 10px;
+	border-bottom: 4px solid white;
+}
+.section3>div>.inner{
+	width: 1300px;
+	height: 354px;
+	margin: 0 auto;
+	margin-top: 100px;
+	position: relative;
+}
+.section3>div>.inner>.list{
+}
+.section3>div>.inner>.list>li{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0;
+	padding: 0 50px;
+}
+.section3>div>.inner>.list>li>a{
+	width: 182px;
+	height: 28px;
+	padding: 20PX;
+	display: block;
+	border-radius: 20px;
+	text-decoration: none;
+	/*background: url('')no-repeat center,#03effc;*/
+	background-color: #03effc;
+}
+.section3>div>.inner>.lessons{
+	width: 555px;
+	height: 276px;
+	border-radius: 20px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -277.5px;
+	/*background-color: hotpink;*/
+}
+.section3>div>.inner>.lessons>li{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 30px;
+}
+.section3>div>.inner>.lessons>li:nth-child(1){
+	background-color: red;
+}
+.section3>div>.inner>.lessons>li:nth-child(2){
+	background-color: green;
+}
+.section3>div>.inner>.lessons>li:nth-child(3){
+	background-color: orange;
+}
+.section3>div>.inner>.lessons>li:nth-child(4){
+	background-color: skyblue;
+}
+.section3>div>.inner>.lessons>li:nth-child(5){
+	background-color: hotpink;
+}
+.section3>div>.inner>.lessons>li:nth-child(6){
+	background-color: blue;
+}
+/*li标签高亮*/
+.section3>div>.inner>.list>li>a.active{
+	background-color: yellow;
+}
+/*第四屏区域*/
+.section4{
+	background: url('../images/fourth_bg.jpg') center/100% 100% no-repeat;
+}
+.section4>div{
+}
+.section4>div>.title{
+	width: 860px;
+	height: 140px;
+	margin: 0 auto;
+	background: url('../images/hengfu.png') bottom left/250px 40px no-repeat;
+}
+.section4>div>.title>h2{
+	color: #009199;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 900;
+	text-align: center;
+	padding: 10px;
+	border-bottom: 4px solid #05b5bf;
+}
+/*手风琴菜单*/
+.section4>div>.wind{
+	width: 960px;
+	height: 600px;
+	margin: 0 auto;
+	margin-top: 40px;
+	border-radius: 20px;
+	background-color: hotpink;
+	position: relative;
+	overflow: hidden;
+}
+.section4>div>.wind>div{
+	position: absolute;
+	border-radius: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 700px;
+	height: 100%;
+	left: 0;
+	padding: 30px;
+	/*添加过渡效果*/
+	transition: all .5s;
+}
+.section4>div>.wind>div:nth-child(1){
+	background-color: yellow;
+}
+.section4>div>.wind>div:nth-child(2){
+	background-color: yellowgreen;
+}
+.section4>div>.wind>div:nth-child(3){
+	background-color: green;
+	/*特殊处理弹性布局排布*/
+	flex-direction: column;
+}
+.section4>div>.wind>div:nth-child(4){
+	background-color: darkgreen;
+}
+.section4>div>.wind>div:nth-child(5){
+	background-color: red;
+}
+.section4>div>.wind>div:nth-child(6){
+	background-color: purple;
+}
+.section4>div>.wind>div:nth-child(7){
+	background-color: skyblue;
+}
+.section4>div>.wind>div>img{
+	display: block;
+	width: 300px;
+	height: 500px;
+}
+.section4>div>.wind>div>img.i3{
+	width: 700px;
+	height: 300px;
+}
+.section4>div>.wind>div>div{
+	padding: 50px 20px 0;
+}
+.section4>div>.wind>div>div>h4{
+	text-align: center;
+}
+.section4>div>.wind>div>div>p{}
+/*第五屏区域*/
+.section5{
+	background:url('../images/fifth_bg.jpg')no-repeat center/cover;
+}
+.section5>div{
+	background-color: rgba(0,0,0,.6);
+}
+.section5>div>.title{
+	width: 860px;
+	height: 140px;
+	margin: 0 auto;
+	background: url('../images/hengfu.png') bottom left/250px 40px no-repeat;
+}
+.section5>div>.title>h2{
+	color: white;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 900;
+	text-align: center;
+	padding: 10px;
+	border-bottom: 4px solid white;
+}
+.section5>div>.tit{
+	width: 1070px;
+	height: 40px;
+	font-size: 30px;
+	line-height: 40px;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 40px;
+	background-color: rgba(0,0,0,.7);
+}
+.section5>div>.table{
+	position: relative;
+	overflow:hidden;
+	height:250px;
+	width: 1088px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+.section5>div>.table li{}
+.section5>div>.table li a{
+	display: block;
+	line-height: 40px;
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid white;
+}
+.section5>div>.table li a:hover{
+	color: black;
+	background-color: yellow;
+}
+/*动画效果 页面1*/
+/*默认样式*/
+.section1 .word1{
+	transform: translateX(-200%);
+}
+.section1 .word2{
+	transform: translateX(200%);
+}
+/*添加动画以后的样式*/
+.section1.animation .word1{
+	transition: all .5s;
+	transform: none;
+}
+.section1.animation .word2{
+	transition: all .5s;
+	transform: none;
+}
+/*动画效果 页面2*/
+/*默认样式*/
+.section2 .title{
+	transform: translateY(-100%);
+}
+.section2 .st li{
+	transform: translateY(200%);
+}
+/*添加动画以后的样式*/
+.section2.animation .title{
+	transition: all .5s;
+	transform: none;
+}
+.section2.animation .st li{
+	transform: none;
+}
+.section2.animation .st li:nth-child(1){
+	transition: all .5s .5s;
+}
+.section2.animation .st li:nth-child(2){
+	transition: all .5s .7s;
+}
+.section2.animation .st li:nth-child(3){
+	transition: all .5s .9s;
+}
+.section2.animation .st li:nth-child(4){
+	transition: all .5s	1.1s;
+}
+/*动画效果 页面3*/
+/*默认样式*/
+.section3 .title{
+	transform: translateY(-100%);
+	opacity: 0;
+}
+.section3 .inner{
+	transform: translateY(200%);
+	opacity: 0;
+}
+/*添加动画以后的样式*/
+.section3.animation .title{
+	transform: none;
+	opacity: 1;
+	transition: all .5s;
+}
+.section3.animation .inner{
+	transform: none;
+	opacity: 1;
+	transition: all .5s;
+}
+/*动画效果 页面3*/
+/*默认样式*/
+.section4 .title{
+	transform: translateY(-100%);
+	opacity: 0;
+}
+.section4 .wind{
+	transform: translateY(200%);
+	opacity: 0;
+}
+.section4.animation .title{
+	transform: none;
+	opacity: 1;
+	transition: all .5s;
+}
+.section4.animation .wind{
+	transform: none;
+	opacity: 1;
+	transition: all .5s;
+}
